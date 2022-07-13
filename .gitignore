@@ -1,4 +1,5 @@
 resources/
+.hugo_build.lock
 
 # Ignore .DS_store file on Mac
 .DS_Store
