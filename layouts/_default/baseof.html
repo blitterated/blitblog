@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head section -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Blitterated</title>
+
+  <style>
+  .hero {
+    background: url(/images/<%= current_page.data.image.hero %>) center/cover
+  }
+
+  </style>
+  <link rel="canonical" href="index.html">
+  <link type="text/plain" rel="author" href="humans.txt"><!-- TODO: what is this? -->
+
+  <link rel="icon" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" sizes="192x192" href="images/touch-icon-192x192.png">
+
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/apple-touch-icon-180x180-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">  
+</head>
+<!-- /head section -->
+
+<body id="top-of-page" class="has-navbar-fixed-top">
+
+  <div id="page-content" class="container is-fluid">
+
+    <!-- navbar section -->
+    <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="">Home</a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="internet-of-things/">IoT</a>
+          <a class="navbar-item" href="retro-computing/">Retro Computing</a>
+          <a class="navbar-item" href="game-development/">Game Dev</a>
+          <a class="navbar-item" href="software/">Software</a>
+          <a class="navbar-item" href="blog/">All Articles</a>
+        </div>
+        <div class="navbar-start">
+          <a class="navbar-item" href="search/">Search</a>
+          <a class="navbar-item" href="contact/">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- /navbar section -->
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <a id="logo" href="" title="Blitterated - How's your memory today?">
+            <img src="/images/logo.png" alt="Blitterated - How's your memory today?">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- /hero section -->
+
+    <div id="content-and-aside-columns" class="columns">
+
+      <div id="content-column" class="column is-three-quarters">
+
+        {{ block "main" .}}{{ end }}
+
+      </div><!-- /.content-column -->
+
+      <div id="aside-column" class="column" >
+        <!-- aside section -->
+        <aside>
+          <div class="is-alert">
+            <h4>Support me on Patreon!</h4>
+            <p>
+              If you enjoy Blitterated, help me make more great content.  Support me on Patreon.
+              <br />
+              <br />
+              <a href="" data-patreon-widget-type="become-patron-button">Become a Patron someday!</a>
+            </p>
+          </div>
+
+          <div id="mailchimp-embed" class="is-primary">
+
+            <div id="mc_embed_signup">
+              Embed mailchimp signup here
+            </div><!-- /.mc_embed_signup -->
+          </div><!-- /.mailchimp-embed -->
+        </aside>
+        <!-- /aside section -->
+      </div><!-- /.aside-column -->
+
+    </div><!-- /.content-and-aside-columns -->
+
+    <!-- footer section -->
+    <footer class="footer is-primary">
+    I am a footer
+    </footer>
+    <!-- /footer section -->
+
+  </div><!-- /.page-content -->
+
+</body>
+</html>
