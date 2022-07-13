@@ -1,0 +1,11 @@
+    {{ $asset := resources.Get "/boing-ball.png" }}
+    {{ $heroImg := $asset.Fit "200x200" }}
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <a id="logo" href="" title="Blitterated - How's your memory today?">
+            <img src="{{ $heroImg.RelPermalink }}" alt="Blitterated - How's your memory today?">
+          </a>
+        </div>
+      </div>
+    </section>
