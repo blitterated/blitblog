@@ -7,8 +7,11 @@
   .hero {
     background: url(/images/<%= current_page.data.image.hero %>) center/cover
   }
-
   </style>
+
+  {{ $siteCss := resources.Get "main.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+  <link rel="stylesheet" href="{{ $siteCss.Permalink }}">
+
   <link rel="canonical" href="index.html">
   <link type="text/plain" rel="author" href="humans.txt"><!-- TODO: what is this? -->
 
