@@ -3,9 +3,10 @@
 
   <title>Blitterated</title>
 
+  {{ $heroBanner := resources.Get "/cathedrals.png" }}
   <style>
   .hero {
-    background: url(/images/<%= current_page.data.image.hero %>) center/cover
+    background: url({{ $heroBanner.RelPermalink }}) center/cover
   }
   </style>
 
