@@ -1,4 +1,6 @@
 ---
 title: Home
-hero: cathedrals.png
+image:
+   hero: audio-vaporwave-cathedrals.png
+   thumb:
 ---

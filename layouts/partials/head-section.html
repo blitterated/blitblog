@@ -3,7 +3,7 @@
 
   <title>Blitterated</title>
 
-  {{ $heroBanner := resources.Get "/cathedrals.png" }}
+  {{ $heroBanner := resources.Get (.Params.image.hero) }}
   <style>
   .hero {
     background: url({{ $heroBanner.RelPermalink }}) center/cover
