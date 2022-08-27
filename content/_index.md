@@ -1,6 +1,6 @@
 ---
 title: Home
 image:
-   hero: audio-vaporwave-cathedrals.png
+   hero: audio-vaporwave-fence.png
    thumb:
 ---
