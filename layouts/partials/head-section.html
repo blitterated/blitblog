@@ -3,7 +3,8 @@
 
   <title>Blitterated</title>
 
-  {{ $heroBanner := resources.Get (.Params.image.hero) }}
+  {{ $heroBannerFileName := .Params.image.hero | default "audio-vaporwave-towers.png" }}
+  {{ $heroBanner := resources.Get $heroBannerFileName }}
   <style>
   .hero {
     background: url({{ $heroBanner.RelPermalink }}) center/cover
