@@ -6,8 +6,8 @@ image:
    hero: audio-vaporwave-fence.png
    thumb:
 author: blitterated
-tags: ["Docker", "Java", "Gradle"]
-categories: ["Software Engineering"]
+tags: ["Docker", "Java", "Gradle", "Software Engineering"]
+categories: ["Software"]
 ---
 # Create a Java and Gradle dev environment
 
