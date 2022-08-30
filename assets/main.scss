@@ -7,9 +7,16 @@
 // Update blue
 $blue: #72d0eb;
 
-// Add pink and its invert
-$pink: #ffb3b3;
-$pink-invert: #fff;
+// Friture yellow
+$yellow: #e2dc66;
+
+// Friture orange
+//$orange: #f42;
+$orange: #f07005;
+
+// Add purple and its invert
+$purple: #402096;
+$purple-invert: $orange;
 
 // Add a serif family
 $family-serif: "Merriweather", "Georgia", serif;
@@ -17,8 +24,8 @@ $family-serif: "Merriweather", "Georgia", serif;
 // 3. Set the derived variables
 
 // Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
+$primary: $purple;
+$primary-invert: $purple-invert;
 
 // Use the existing orange as the danger color
 $danger: $orange;
