@@ -20,6 +20,12 @@ docker run -it --rm --init \
            hugoblog
 ```
 
+### Start the server in the container
+
+```sh
+hugo server -D --bind "0.0.0.0"
+```
+
 [Link for site in container](http://localhost:1313)
 
 #### Run the image with a one off command
