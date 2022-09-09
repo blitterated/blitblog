@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <h1 class="title is-4">{{ .Params.title }}</h1>
+  <h2 class="title is-6">{{ .Params.subtitle }}</h1>
+  {{ .Content }}
+  <ul>
+  {{ range .Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
+  </ul>
+{{ end }}
