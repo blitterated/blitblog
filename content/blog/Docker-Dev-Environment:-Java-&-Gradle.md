@@ -9,8 +9,6 @@ author: blitterated
 tags: ["Docker", "Java", "Gradle", "Software Engineering"]
 categories: ["Software"]
 ---
-# Create a Java and Gradle dev environment
-
 Creating a development environment in Docker requires that we juggle two contexts. One is the Docker side, the run time and dependency management for the project. The other is the project itself, the source code.
 
 Here we're going to take an iterative approach to building these up. Then at the end, we should have a complete set of files for the Docker development environment, as well as a scaffolded project directory. All the appropriate mappings between the two will be setup as well.
