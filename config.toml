@@ -1,3 +1,8 @@
 baseURL = 'http://blitterated.com/'
 languageCode = 'en-us'
 title = 'Blitterated Blit Blog'
+
+markup.highlight.noClasses=false
+#[markup]
+#  [markup.highlight]
+#    style = 'solarized-dark'
