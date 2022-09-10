@@ -1,12 +1,10 @@
 {{ define "main" }}
   <div class="container">
     <h1>All {{ .Type }}</h1>
-    <ul>
+    <div class="tags">
       {{ range .Data.Pages }}
-        <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
+        <a class="button is-primary is-light is-rounded" href="{{ .Permalink }}">{{ .Title }}</a>
       {{ end }}
-    </ul>
+    <div>
   </div>
 {{ end }}
