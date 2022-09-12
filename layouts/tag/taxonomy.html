@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <div class="container">
+    <h1>All {{ .Type }} (Taxonomy)</h1>
+    <div class="tags">
+      {{ range .Data.Pages }}
+        <a class="button is-primary is-light is-rounded" href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    <div>
+  </div>
+{{ end }}
