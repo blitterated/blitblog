@@ -1,6 +1,6 @@
 ---
 date: 2022-07-18T08:59:00Z
-title: "Broken Xcode Command Line Toolsr Installation"
+title: "Broken Xcode Command Line Tools Installation"
 draft: true
 image:
    hero: audio-vaporwave-fence.png
