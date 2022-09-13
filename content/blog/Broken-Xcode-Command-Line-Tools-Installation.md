@@ -6,7 +6,7 @@ image:
    hero: audio-vaporwave-fence.png
    thumb:
 author: blitterated
-tags: ["XCode", "Homebrew", "CommandLineTools", "xcode-select", "Software Development", "Tooling"]
+tags: ["XCode", "Homebrew", "CommandLineTools", "xcode-select", "Tooling"]
 categories: ["Software"]
 ---
 I got the following error trying to update the [QMK CLI for Mac OS](https://github.com/qmk/qmk_cli#macos) via Homebrew.
