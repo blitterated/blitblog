@@ -39,15 +39,6 @@ mkdir ~/fix-emails && cd $_
 
 ### Create a mailmap file in the work directory
 
-If you try to do this in the repo itself, you get the following warning:
-
-```Aborting: Refusing to destructively overwrite repo history since
-this does not look like a fresh clone.
-  (you have untracked changes)
-Please operate on a fresh clone instead.  If you want to proceed
-anyway, use --force.
-```
-
 The syntax is gitmailmerge.
 
 ```text
@@ -68,11 +59,43 @@ blitterated <blitterated@protonmail.com> Real Name <realn@foo.bar>
 EOF
 ```
 
+__NOTE:__ If you create this in the repo itself and then run `git filter-repo`, you get the following warning:
+
+```text
+Aborting: Refusing to destructively overwrite repo history since
+this does not look like a fresh clone.
+  (you have untracked changes)
+Please operate on a fresh clone instead.  If you want to proceed
+anyway, use --force.
+```
+
+
 ### Pull down a fresh clone of your repo and cd into it
+
+From a remote repo:
 
 ```sh
 git clone git@github.com:blitterated/some-repo.git
 cd some-repo
+```
+
+From a local repo:
+
+```sh
+git clone --no-local ~/src/my-local-project
+cd some-repo
+```
+
+If you don't use `--no-local`, you'll wind up with the following error:
+
+```text
+Aborting: Refusing to destructively overwrite repo history since
+this does not look like a fresh clone.
+  (expected freshly packed repo)
+Note: when cloning local repositories, you need to pass
+      --no-local to git clone to avoid this issue.
+Please operate on a fresh clone instead.  If you want to proceed
+anyway, use --force.
 ```
 
 ### Run git-filter-repo
